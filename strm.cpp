@@ -26,7 +26,7 @@ unsigned char itc_changeCase(unsigned char c){
     return c;
     }
 }
-bool itc_Compare(string s1, string s2){
+bool itc_compare(string s1, string s2){
     int tr = 1;
     int fa = 0;
     for(int i = 0; i != '0'; i++){
