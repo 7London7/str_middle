@@ -1,4 +1,4 @@
-#include "strm.h"
+#include "middle_str.h"
 bool itc_isDigit(unsigned char c){
     if(c >= '0' && c <= '9'){
         cout << 1;
@@ -27,7 +27,18 @@ unsigned char itc_changeCase(unsigned char c){
     }
 }
 bool itc_Compare(string s1, string s2){
-    for(int i = 0; i >= 0; i--){
-
+    int tr = 1;
+    int fa = 0;
+    for(int i = 0; i != '0'; i++){
+    if(s1[i] != s2[i]){
+        fa++;
+    }else{
+    tr++;
+    }
+    }
+    if(fa > 0){
+        cout << 0;
+    }else{
+    cout << 1;
     }
 }
