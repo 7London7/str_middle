@@ -1,16 +1,14 @@
 #include "middle_str.h"
 bool itc_isDigit(unsigned char c){
     if(c >= '0' && c <= '9'){
-        cout << 1;
+        return 1;
     }else{
-    cout << 0;
+        return 0;
     }
 }
 unsigned char itc_toUpper(unsigned char c){
     if(c >= 90){
         c = c - 32;
-    }else{
-    c = c + 32;
     }
     return c;
 }
@@ -37,8 +35,8 @@ bool itc_compare(string s1, string s2){
     }
     }
     if(fa > 0){
-        cout << 0;
+        return 0;
     }else{
-    cout << 1;
+    return 1;
     }
 }
