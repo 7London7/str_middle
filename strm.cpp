@@ -40,3 +40,14 @@ bool itc_compare(string s1, string s2){
     return 1;
     }
 }
+int itc_countWords(string str){
+    int kol = 0;
+    for(int i = 0; str[i] != '\0'; i++){
+        if(str[i] >= 'a' && str[i] <= 'z' && str[i] >= 'A' && str[i] <= 'Z' ){
+            if(str[i] == ' '){
+                kol++;
+            }
+        }
+    }
+        return kol;
+}
